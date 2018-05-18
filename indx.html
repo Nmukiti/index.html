@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layouts</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+		div.container{
+			width: 100%;
+			border: 2px solid black;
+		}
+		header,footer{
+			/*if you want to style two elements the same way do so with commas*/
+			color: #ffffff;
+			background-color: #000000;
+			text-align: center;
+			/*clear is an attribute that is used to specify on which part you don't want a floating item*/
+	        clear: left;
+            padding: 2em;
+		}
+		nav{
+			float: left;
+			margin: 0;
+			padding: 2em;
+			max-width: 200px;
+		}
+		nav ul{
+			list-style-type: none;
+			padding: o;
+		}
+		article{
+			margin-left: 200px;
+			border-left: 2px solid black;
+			font-family: gabriola;
+			padding: 2em;
+			background-color: gray;
+			/*overflow is used to add scrollbars if content is too long or much*/
+			overflow: hidden;
+		}
+		li a{
+			font-family: impact;
+			font-size: 23px;
+			color: maroon;
+		}
+	</style>
+</head>
+<body>
+  <div class="container">
+  	<header>May Intake</header>
+     <!--Below is the section for navigating.This  is where your links to the other segments in the webpage are placed-->
+  	<nav>
+  		<!--We then created an unordered list where we placed our navigation links -->
+  		<ul>
+  			<!--#refers to an id selector-->
+  			<li><a href="#">HomePage</a></li>
+  			<li><a href="#">AboutUs</a></li>
+  			<li><a href="#">ContactUs</a></li>
+  		</ul>
+  	</nav>
+  	<!--Article tags are used when you want to define independent content that does not rely on other content-->
+  	  <article>
+  		<marquee direction="left"><h1>Programming is awesome</h1></marquee>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur.</p>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat.</p>
+      </article>
+  	<hr>
+  	<!--this is the segment for about us-->
+  	<div class="row">
+  		<div class="col-sm-4">
+        <img src="pexels-photo-127513.jpeg" class="img-circle" height="200px" width="200px">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqu.</p>
+  		</div>
+  		<div class="col-sm-4">
+        <img src="pexels-photo-257360.jpeg" class="img-circle"height="200px" width="200px">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua.</p>
+  		</div>
+      <div class="col-sm-4">
+        <img src="pexels-photo-325185.jpeg" class="img-circle"height="200px" width="200px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+  	</div>
+  	<footer id="ContactUs">
+  		<!--&copy is an entity for copyright and &reg is an entity for registered trademark-->
+  		<form>
+  			<input type="text" name="email" placeholder="Enter email address"><br>
+  			<!--text area is a multiple line input field-->
+  			<textarea name="message" rows="12" cols="36">Comment here</textarea><br>
+  			<button type="button" onclick="Thank you..." style="color:black" class="success">Submit comment</button>
+  		</form>
+  		Copyright &copy;eMobilis <br>
+  		+254714922478 <br>
+  		&reg;May Class
+  	</footer>
+  </div>
+</body>
+</html>
